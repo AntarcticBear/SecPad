@@ -1,5 +1,9 @@
+publish/
 bin/
 obj/
 .vs/
 *.user
 *.suo
+*.exe
+*.pdb
+*.dll
