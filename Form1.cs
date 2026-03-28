@@ -1,3 +1,5 @@
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace SecPad
 {
     public partial class Form1 : Form
@@ -39,9 +41,30 @@ namespace SecPad
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            TextArea.Text = string.Empty;
-            Clipboard.Clear();
+            TextArea.Clear();
+            try {
+                Clipboard.Clear();
+            } catch { /*何もしない*/ }
             base.OnFormClosing(e);
+        }
+
+        private void FontButton_Click(object sender, EventArgs e)
+        {
+            using (FontDialog fd = new FontDialog())
+            {
+                fd.Font = TextArea.Font;
+                fd.ShowColor = false; // 色は不要
+                fd.ShowEffects = false; // イタリック、ボールドは不要
+
+                if (fd.ShowDialog() == DialogResult.OK)
+                {
+                    TextArea.Font = fd.Font;
+
+                    Properties.Settings.Default.FontName = TextArea.Font.Name;
+                    Properties.Settings.Default.FontSize = TextArea.Font.Size;
+                    Properties.Settings.Default.Save();
+                }
+            }
         }
     }
 }

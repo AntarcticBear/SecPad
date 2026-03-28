@@ -1,0 +1,111 @@
+# SecPad v1
+
+## English
+
+SecPad is a temporary text editor designed for handling sensitive text such as IDs and passwords.
+
+It is intended to be used as a local, temporary workspace to verify and copy text before pasting it into other applications.
+
+### Features
+
+- No save functionality
+- No network functionality
+- Temporary text editing
+- Copy / Paste / Cut
+- Font can be changed for better readability
+- Text area is cleared when the application closes
+- Clipboard is cleared on exit (best effort)
+
+### Security Policy
+
+SecPad is designed with the following principles:
+
+- No data is stored locally
+- No network communication is performed
+- Text exists only during runtime
+- On exit, the application clears the text area and attempts to clear the clipboard
+
+### Notes
+
+- This application is not a password manager
+- Do not use it for long-term storage
+- Clipboard clearing is performed on a best-effort basis
+- Due to OS behavior or other software, clipboard history may remain
+
+### Usage
+
+1. Paste temporary data into SecPad
+2. Verify the content visually
+3. Copy only the necessary part
+4. Paste it into the target application
+5. Close SecPad to discard all data
+
+### Font
+
+You can change the font to improve readability.
+
+This helps distinguish similar characters such as:
+
+- 1 / I / l / |
+- 0 / O
+- 6 / b
+
+### License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## 日本語
+
+SecPad は、ID やパスワードなどの機微な文字列を一時的に確認・編集・コピーするための簡易テキストエディタです。
+
+他のアプリケーションへ貼り付ける前の、一時的な作業領域として使用することを想定しています。
+
+### 特徴
+
+- 保存機能なし
+- ネットワーク機能なし
+- 一時的なテキスト編集
+- Copy / Paste / Cut 対応
+- 可読性向上のためフォント変更可能
+- 終了時にテキストエリアをクリア
+- 終了時にクリップボードの消去を試行（ベストエフォート）
+
+### セキュリティ方針
+
+SecPad は以下の方針で設計されています：
+
+- データを保存しない
+- ネットワーク通信を行わない
+- テキストは実行中のみ保持される
+- 終了時にテキストとクリップボードの消去を試みる
+
+### 注意
+
+- 本アプリはパスワードマネージャではありません
+- 長期保存用途には使用しないでください
+- クリップボード消去は保証されるものではありません
+- OS や他ソフトにより履歴が残る場合があります
+
+### 使用方法
+
+1. 一時的な文字列を SecPad に貼り付ける
+2. 内容を目視で確認する
+3. 必要な部分のみコピーする
+4. 対象アプリへ貼り付ける
+5. SecPad を閉じてデータを破棄する
+
+### フォント
+
+フォントを変更することで、文字の見間違いを減らすことができます。
+
+例：
+
+- 1 / I / l / |
+- 0 / O
+- 6 / b
+
+### ライセンス
+
+本ソフトウェアは MIT ライセンスのもとで公開されています。詳細は LICENSE ファイルを参照してください。
