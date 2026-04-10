@@ -3,7 +3,8 @@
     <Platform Name="Any CPU" />
     <Platform Name="x64" />
   </Configurations>
-  <Project Path="SecPad.csproj">
+  <Project Path="SecPad_v1/SecPad.csproj">
     <Platform Solution="*|x64" Project="x64" />
   </Project>
+  <Project Path="SecPad_v2/SecPad12.csproj" />
 </Solution>

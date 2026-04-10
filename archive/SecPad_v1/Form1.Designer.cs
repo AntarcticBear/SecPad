@@ -129,6 +129,7 @@
             TextArea.Dock = DockStyle.Fill;
             TextArea.Font = new Font("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TextArea.Location = new Point(0, 40);
+            TextArea.MinimumSize = new Size(800, 400);
             TextArea.Multiline = true;
             TextArea.Name = "TextArea";
             TextArea.ScrollBars = ScrollBars.Both;

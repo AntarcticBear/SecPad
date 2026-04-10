@@ -2,8 +2,12 @@ publish/
 bin/
 obj/
 .vs/
+.backup
 *.user
 *.suo
 *.exe
 *.pdb
 *.dll
+*.sha256
+*.user
+.gitattributes
